@@ -1,0 +1,71 @@
+.coinMove.up{
+color: #16c784;
+}
+.coinMove.up svg{
+transform: rotate(180deg);
+}
+.coinMove.down{
+color: #ea3943;
+}
+.banner{
+    position: relative;
+    padding-bottom: 160px;
+}
+.banner .bannerContentTop h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'SarunPro';
+    color: #acbcff;
+
+
+}
+.banner .bannerImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: right;
+}
+.bannerContent{
+   
+    z-index: 9;
+    position: relative;
+}
+.bannerContentTop{
+    padding: 30px 0 15px;
+}
+.bannerContentTop p{
+    color: #fff;
+}
+.bannerContentTop p a{
+    color: #acbcff;
+}
+
+.bannerContent .bannerContentBottom{
+
+}
+
+.bannerContentBottom{
+    margin-top: -90px;
+    z-index: 9;
+    position: relative;
+}
+@media (max-width:991px){
+
+    .bannerContentBottom{
+        display: none;
+    }
+   
+    .banner{
+        padding-bottom: 0;
+    }
+    .bannerContentTop{
+        padding: 30px 0;
+        background: rgb(0 0 0 / 58%);
+    }
+    .banner{
+        padding: 0;
+    }
+}

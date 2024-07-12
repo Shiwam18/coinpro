@@ -1,0 +1,156 @@
+
+.bannerCard{
+background: #fff;
+padding: 16px;
+border-radius: 8px;
+box-shadow: 0px 3px 7px 0px rgba(125, 125, 125, 0.35);
+height: 100%;
+overflow: hidden;
+}
+.bannerCardUl{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.coinListHead{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  align-items: center;
+
+}
+.coinListHead span{
+
+  font-size: 16px;
+
+}
+.bannerCardUl .coinChange span{
+  font-size: 14px !important;
+}
+.coinListHead span img{
+margin-right: 10px;
+}
+.coinListHead a{
+  color: #526ad0;
+  text-decoration: none;
+  font-size: 14px;
+}
+.bannerCardUl li{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+.bannerCardIcon{
+  width: 24px !important; 
+  height: 24px !important;
+  margin-right: 15px;
+}
+
+.bannerCardUlSingle .coinName{
+font-size: 12px;
+font-weight: 600;
+}
+
+
+.bannerCardUlSingle.coinChange span{
+  font-size: 16px;
+  font-weight: 500;
+}
+.bannerCardUlSingle.coinChange span.up{
+ color: green !important;
+}
+.bannerCardUlSingle.coinChange span.down{
+  color: #ff4949 !important;
+ }
+ .bannerCardUlSingle.coinChange span.up svg{
+  transform: rotate(180deg);
+ }
+
+.chartDonat{
+  max-height: 200px;
+}
+.chartSingle{
+  display: flex;
+}
+.chartSingle:not(:first-child){
+  margin-top: 20px;
+}
+.chartSingle .chartSingleChart{
+  width: 50%;
+} 
+.chartSingle .chartSingleContent{
+  width: 50%;
+} 
+.chartSingle .chartSingleContent h4{
+  font-weight: 600;
+  font-size: 20px;
+}
+.chartSingle .chartSingleContent p{
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.chartSingle .chartSingleContent p span.up{
+  color: green !important;
+ }
+ .chartSingle .chartSingleContent p span.down{
+   color: #ff4949 !important;
+  }
+  .chartSingle .chartSingleContent p  span.up svg{
+   transform: rotate(180deg);
+  }
+  @media (max-width:1599px){
+    
+    .chartSingle .chartSingleContent p{
+      font-size: 12px;
+    }
+  }
+ @media (max-width:1199px){
+  
+  .bannerCardIcon{
+    margin-right: 10px;
+  }
+    .coinListHead{
+      margin-bottom: 10px;
+    }
+    .chartSingle .chartSingleContent {
+      width: 100%;
+    }
+    .chartSingle .chartSingleChart{
+      display: none;
+    }
+ }
+
+ @media (max-width:991px){
+  
+  
+    .coinListHead{
+      margin-bottom: 10px;
+    }
+ }
+
+ 
+ @media (max-width:767px){
+  .bannerCardUlSingle .coinName{
+    font-size: 16px;
+    }
+    .bannerCardUlSingle .coinName small{
+      font-size: 13px;
+      margin-left: 3px;
+      display: block;
+    }
+   
+    .coinListHead{
+      margin-bottom: 10px;
+    }
+    .bannerCardIcon{
+      width: 23px !important; 
+      height: 23px !important;
+      margin-right: 10px;
+    }
+ }
+
+

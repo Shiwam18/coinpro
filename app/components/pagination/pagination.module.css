@@ -1,0 +1,35 @@
+.pagination{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pagination button{
+border: none;
+background: transparent;
+padding: 10px 15px;
+font-weight: 600;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+}
+.pagination button.navNext{
+background: url(/assets/images/icon/arrow-right.png) no-repeat center center;
+}
+.pagination button.navPrev{
+    background: url(/assets/images/icon/arrow-left.png) no-repeat center center;
+}
+
+.pagination button.active{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #526ad0;
+    color: #fff;
+}
+@media (max-width:767px){
+    .pagination{
+        justify-content: center;
+        overflow: hidden;
+    }
+}

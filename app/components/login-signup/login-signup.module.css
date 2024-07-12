@@ -1,0 +1,145 @@
+.modalClose{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    opacity: 1;
+    background-size: 20px;
+}
+.modalBody{
+    padding: 0;
+}
+.modalBody ul{
+padding: 24px 35px 20px;
+text-align: center;
+justify-content: center;
+margin: 0;
+}
+.modalBody ul li button{
+    background: transparent;
+    font-size: 26px;
+    font-weight: 500;
+    border: none;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+.LoginContent{
+    padding: 0 35px;
+    font-weight: 500;
+}
+.LoginContent h2{
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+.LoginContent label{
+    padding-left: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.LoginContent label a{
+    text-decoration: none;
+    color: #000;
+}
+.LoginContent input{
+    min-height: 55px;
+    border-radius: 70px;
+    padding: 10px 30px;
+
+}
+.LoginContent button{
+    height: 55px;
+    font-size: 20px !important;
+
+}
+.LoginFooter{
+    padding: 20px 0;
+}
+.LoginOr{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.LoginOr:after{
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    content: "";
+}
+.LoginOr small{
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-weight: 500;
+}
+.LoginOptions{
+    padding: 0 35px;
+}
+.LoginOptions button{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 15px 10px;
+    background: transparent;
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.LoginOptions button svg{
+    font-size: 20px;
+    margin-top: -4px;
+}
+.LoginCopy{
+    text-align: center;
+    padding: 0 35px;
+    font-size: 13px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.LoginCopy a{
+    color: #526ad0;
+}
+
+
+@media (max-width:767px){
+    .modalBody ul{
+        padding: 24px 10px 20px;
+    }
+    .LoginContent,.LoginOptions,.LoginCopy{
+        padding: 0 10px;
+    }
+    .LoginCopy{
+        margin-top: 10px;
+    }
+    .modalBody ul li button{
+        padding: 10px;
+    }
+    .LoginContent h2{
+        margin-bottom: 25px;
+    }
+    .LoginContent label{
+        padding-left: 20px;
+        font-size: 14px;
+    }
+    .LoginContent input{
+        min-height: 50px;
+        padding: 10px 20px;
+    
+    }
+    .LoginContent button{
+        height: 50px;
+        font-size: 18px !important;
+    
+    }
+}

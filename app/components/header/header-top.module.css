@@ -1,0 +1,119 @@
+.headerTop{
+    padding: 5px 0;
+    background: #fff;
+}
+.headerInfoList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    
+}
+.headerInfoList li{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+}
+.headerInfoList li a{
+    text-decoration: none;
+    color: #526ad0;
+    font-weight: 600;
+}
+.headerInfoList li svg{
+    margin-top: -2px;
+}
+
+.headerInfoList li span.up{
+color: #16c784;
+}
+.headerInfoList li span.up svg{
+    transform: rotate(180deg);
+    }
+.headerRight{
+    display: flex;
+    align-items: center;
+
+}
+.headerButtons{
+    display: flex;
+    padding-left: 20px;
+}
+.headerInfoList li span.down{
+    color: #ea3943;
+    }
+    .headerTopInner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .languageDropdown button{
+        border: none;
+        background: transparent;
+        font-size: 13px;
+        display: flex;
+    align-items: center;
+        font-weight: 600;
+        padding: 0 10px
+    }
+    .languageDropdown button img{
+        margin-right: 3px;
+    }
+    .languageDropdown ul{
+        border-radius: 10px;
+        box-shadow: 0px 8px 32px 0px rgba(128,138,157,0.24),0px 1px 2px 0px rgba(128,138,157,0.12);
+        border: none;
+        background: #fff;
+        padding: 15px;
+    }
+    .languageDropdown ul li a{
+        padding: 10px 15px;
+        font-size: 12px;
+        color: #000;
+        font-weight: 600;
+    }
+    .headerBtn{
+        font-size: 13px !important;
+        padding: 6px 18px !important;
+    }
+
+    .headerBtn + .headerBtn{
+        margin-left: 10px;
+        color: #fff;
+        border-color: #fff;
+      }
+
+
+      @media (max-width:1299px){
+        .headerInfoList{
+            height: 20px;
+            overflow: hidden;
+            display: block;
+        }
+        .headerInfoList li{
+           display: block;
+        }
+        .languageDropdown button{
+            padding: 0 3px;
+        }
+      }
+
+      @media (max-width:767px){
+        .languageDropdown{
+            display: none;
+        }
+       .headerRight{
+        width: 100%;
+        justify-content: center;
+       }
+       
+       .headerRight .headerButtons{
+        padding-left: 0;
+        width: 100%;
+        justify-content: center;
+       }
+       .headerRight .headerButtons a{
+        width: 100%;
+        max-width: 180px;
+       }
+      }

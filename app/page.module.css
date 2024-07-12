@@ -1,0 +1,67 @@
+.faq{
+    padding-bottom: 50px;
+}
+.subscribe{
+    position: relative;
+    padding: 60px 0;
+    background-color: #0c001e;
+}
+.subscribe .subscribeBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+    object-position: right;
+}
+.subscribefrom{
+
+}
+.subscribeContent{
+    position: relative;
+    z-index: 9;
+    color: #fff;
+}
+.subscribeContent .subscribefrom form{
+display: flex;
+margin-top: 30px;
+}
+.subscribeContent .subscribefrom input{
+    background: #fff;
+    border: none;
+    height: 50px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: 100%;
+}
+.subscribeContent .subscribefrom button{
+    border-radius: 50px;
+    border: none;
+    padding: 10px 30px;
+    font-weight: 600;
+    background: #526ad0;
+    color: #fff;
+    margin-left: 10px;
+}
+.subscribeContent h2{
+    margin-bottom: 20px;
+}
+
+@media (max-width:1199px){
+    .faq,.subscribe{
+        padding: 30px 0;
+    }
+}
+@media (max-width:991px){
+    .faq,.subscribe{
+        padding: 0;
+    }
+    .subscribeBg{
+        object-fit: cover !important;
+    }
+    .subscribeContent{
+        padding: 30px 0;
+        background: rgb(0 0 0 / 67%);
+    }
+}

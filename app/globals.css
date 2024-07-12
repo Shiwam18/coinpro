@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: 'SarunPro';
+  src: url('/assets/fonts/SarunPro-Bold.woff2') format('woff2'),
+      url('/assets/fonts/SarunPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.body{
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 15px;
+  color: #000;
+  font-weight: 400;
+}
+
+header .navbar-brand{
+  margin: 0;
+  padding: 0;
+}
+header .navbar-brand img{
+ max-width: 194px;
+ min-width: 160px;
+}
+header .nav-item{
+  padding: 0 16px !important;
+}
+header .nav-link{
+  font-size: 14px;
+  padding: 15px 3px !important;
+  position: relative;
+  font-weight: 600;
+  color: #000;
+}
+header .nav-link:after{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  right: 0;
+  bottom: 0;
+  background:#fff;
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+header .nav-link.active,header .nav-link:hover{
+  color: #526ad0 !important;
+}
+header .nav-link.active:after,header .nav-link:hover:after{
+  background: #526ad0 !important;
+  transition: 0.3s ease;
+  width: 100%;
+}
+.btn.theme-btn{
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 26px;
+  border: 1px solid #526ad0;
+  overflow: hidden;
+  font-weight: 600;
+}
+.btn.theme-btn span{
+  position: relative;
+  z-index: 9;
+}
+.btn.theme-btn.border-btn{
+
+  color: #526ad0;
+  border-color: #526ad0;
+}
+.btn.theme-btn:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background: #526ad0;
+  transition: 0.2s ease;
+  content: "";
+
+}
+.btn.theme-btn:hover{
+  color: #526ad0;
+  border-color: #526ad0;
+}
+.btn.theme-btn:hover:after{
+  height: 0;
+  transition: 0.2s ease;
+}
+.btn.theme-btn.border-btn:after{
+ height: 0;
+ transition: 0.2s ease;
+}
+.btn.theme-btn.border-btn:hover:after{
+height: 100%;
+transition: 0.2s ease;
+}
+.btn.theme-btn.border-btn:hover{
+  color: #fff;
+}
+.btn.theme-btn.White-btn{
+  color: #526ad0;
+  box-shadow: 1.5px 2.598px 7px 0px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+.btn.theme-btn.White-btn:after{
+  background-color: rgb(255, 255, 255);
+}
+.section-padding{
+position: relative;
+}
+.section-head{
+  font-size: 16px;
+  padding-bottom: 50px;
+}
+.section-title{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'SarunPro';
+}
+
+
+
+.faq .accordion-item{
+  border: 0;
+  border-bottom:1px solid #526ad0;
+  border-radius: 0 !important;
+  }
+  .faq .accordion-item .accordion-button:focus{
+    outline: 0;
+    border: none;
+    box-shadow: none;
+  
+  }
+  .accordion-item{
+    border-radius: 0;
+  }
+  .faq .accordion-item .accordion-button{
+    background: transparent !important;
+    border: none !important;
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    border-color: #fff;
+    box-shadow: none;
+    padding-right: 20px !important;
+  }
+  .accordion-button:after{
+
+    color: #fff;
+
+
+  }
+
+  .faq .accordion-item .accordion-body{
+  padding: 20px 0;
+  border-top: 0 !important;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+  }
+  .faq .accordion-item  .accordion-collapse .accordion-button{
+    padding: 19px 0;
+  }
+  .faq .accordion-item  .accordion-collapse .accordion-body{
+    padding-top: 0;
+  }
+  
+  
+  .pagination button.active{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #526ad0;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.faq .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+  transition: all 0.5s;
+}
+
+.faq .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+}
+.coin-table .chart-line{
+  max-height: 55px;
+  max-width: 150px;
+  margin-left: auto;
+}
+.coin-table td:last-child{
+ width: 200px;
+ text-align: right;
+}
+.donat-chart{
+  position: relative;
+  height: 110px;
+  max-width: 100%;
+}
+.donat-chart .donat-chart-text {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+}
+.donat-chart .donat-chart-text small {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin-top: 5px;
+  color: #333;
+}
+
+
+@media (max-width:1599px){
+  body{
+    font-size: 14px;
+  }
+  header .nav-item {
+    padding: 0 10px !important;
+}
+header .nav-link{
+  padding: 10px 3px !important;
+}
+.faq .accordion-item .accordion-button{
+  font-size: 18px;
+}
+.section-title {
+  font-size: 26px;
+}
+}
+
+@media (max-width:1199px){
+  .navbar-collapse{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    right: 0;
+    background-color: #fff;
+    z-index: 999;
+    max-width: 575px;
+  }
+  .navbar-collapse ul{
+    padding: 0 10px;
+    margin-left: 0 !important;
+  }
+}
+
+.login-modal-dialog{
+  max-width: 520px !important;
+}
+
+.login-modal button.active{
+
+color: #526ad0;
+font-weight: bold;
+}
+.login-modal-dialog .modal-content{
+  border-radius: 20px;
+  border: none;
+}
+
+.position-relative{
+  position: relative;
+}
+.form-group .passwordEyeIcon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 25px;
+  color: #b1b1b1;
+}
+.select2-selection__rendered li:after, input[type=password]+.passwordEyeIcon .eyeClose, input[type=text]+.passwordEyeIcon .eyeOpen {
+  display: none;
+}
+
+.dashboardtabHead a.active{
+  background-color: #526ad0 !important;
+  color: #fff !important;
+  border-radius: 40px;
+}
+.dashboard-chart{
+  max-height: 700px;
+  padding-bottom: 50px;
+}
+
+
+@media (max-width:767px){
+  .dashboard-chart{padding-bottom: 30px;}
+
+  .faq .accordion-item .accordion-body{
+
+    font-size: 14px;
+    text-align: justify;
+    }
+    .section-head {
+      font-size: 16px;
+      padding-bottom: 20px;
+  }
+}

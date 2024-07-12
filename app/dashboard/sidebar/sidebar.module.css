@@ -1,0 +1,202 @@
+.dashboardSidebarSingle{
+    padding: 20px;
+    border-radius: 20px;
+    background: #f6f7fe;
+}
+.dashboardSidebarSingle + .dashboardSidebarSingle{
+    margin-top: 22px;
+}
+.walletLogo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d9def5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.dashboardSidebarSingleHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+.walletName{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.walletName small{
+    font-size: 18px;
+    font-weight: normal;
+}
+.walletBatch{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d9def5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+ 
+}
+.walletBalance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.walletBalance small{
+    font-size: 20px;
+    font-weight: normal;
+}
+.walletBalance small.down{
+    color: #f82424;
+}
+.walletBalance small.up{
+    color: green;
+}
+.walletBalance small.up svg{
+    transform: rotate(180deg);
+}
+.sidebarbtn{
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 20px;
+}
+.sidebarbtn svg{
+    margin-right: 20px;
+}
+.sidebarbtn + .sidebarbtn{
+    margin-top: 10px;
+}
+.sidebarbtn:hover{
+color: #fff;
+background: #526ad0;
+}
+.progressBar{
+    position: relative;
+    background: #526ad0;
+    overflow: visible;
+}
+.progressBar:after{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #526ad0;
+    position: absolute;
+   right: -2px;
+    top: -4px;
+    content: "";
+}
+.progress{
+    overflow: visible;
+    width: calc(100% - 50px);
+}
+.marketInfo{
+list-style: none;
+padding: 0;
+margin: 0;
+font-size: 18px;
+font-weight: 500;
+}
+.marketInfo li{
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.marketInfo li .rank{
+width: 50px;
+text-align: right;
+
+}
+.marketInfoMove{
+    font-size: 100%;
+    font-weight: 500;
+}
+.marketInfoMove.down{
+    color: #f82424;
+}
+.marketInfoMove.up{
+    color: green;
+}
+.marketInfoMove.up svg{
+    transform: rotate(180deg);
+}
+.infoSingleBg{
+    font-size: 14px;
+    font-weight: 600;
+    background: #d9def5;
+    border-radius: 50px;
+    padding: 8px 18px;
+}
+.infoSingleBg select{
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.infoSingleBg select:focus{
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+
+@media (max-width:1199px){
+    .dashboardSidebarSingle{
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .walletLogo{
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+    .walletBatch{
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+    .walletLogo{
+
+    }
+    .walletBalance{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .walletBalance small{
+        font-size: 16px;
+    }
+    .dashboardSidebarSingleHead{
+        margin-bottom: 15px;
+    }
+    .sidebarbtn{
+        font-size: 13px;
+    padding: 10px 15px;
+    }
+    .marketInfo li{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:575px){
+    .infoSingleBg + .infoSingleBg{
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,16 @@
+@media(min-width:1599px){
+    .container{
+      max-width: 1560px !important;
+    }
+    .container-fluid{
+      max-width: 1920px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    }
+
+
+
+    @media (min-width: 768px) {
+    
+  }

@@ -1,0 +1,232 @@
+.dashboardHeader ul{
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+.dashboardHeader {
+    padding-top: 30px;
+}
+.dashboardHeader ul li {
+    padding: 0 30px;
+}
+.dashboardHeader ul li:first-child{
+    padding-left: 0;
+}
+.dashboardHeader ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 8px 0;
+    position: relative;
+    font-weight: 500;
+}
+.dashboardHeader ul li a:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background:#526ad0;
+}
+.dashboardHeader ul li a:hover:after,.dashboardHeader ul li a.active:after{
+    width: 100%;
+}
+.dashboardHeader ul li a:hover,.dashboardHeader ul li a.active{
+    color: #526ad0;
+}
+.dashboardHead{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 34px;
+    padding-bottom: 34px;
+
+}
+.dashboardHeadleft{
+    display: flex;
+    align-items: center;
+}
+.dashboardHeadleft ul{
+    background: #f6f7fe;
+    border-radius: 50px;
+    overflow: hidden;
+    border: none !important;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+}
+.dashboardHeadleft ul + ul{
+    margin-left: 24px;
+}
+
+.dashboardHeadleft ul li a{
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000;
+    border: none !important;
+    display: inline-block;
+    font-size: 14px;
+}
+.dashboardHeadRight{
+    display: flex;
+}
+.dashboardHeadRightRight{
+    display: flex;
+    align-items: center;
+}
+.dashboardHeadleftRight a{
+    font-size: 36px !important;
+    padding: 2px 10px !important;
+    line-height: 1;
+    display: inline-flex !important;
+    height: 49px;
+    width: 49px;
+    align-items: center;
+    justify-content: center;
+}
+.dashboardHeadRightleft{
+    background-color: transparent !important;
+}
+.dashboardHeadRightleft li a{
+    height: 49px;
+    width: 49px;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 2px 10px !important;
+    line-height: 1;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.downloadbtn{
+    background: transparent;
+    border: none;
+    margin: 0 20px;
+    pad: 5px;
+    font-size: 24px;
+}
+.switch{
+    padding-left: 0 !important;
+    padding-right: 50px !important;
+    line-height: 1.9;
+    font-weight: 500;
+}
+.switch input{float: right !important;margin-right: -55px; background-color: #526ad0 !important;
+height: 23px !important;
+width: 48px !important;
+}
+.switch input:focus{
+outline: 0 !important;
+box-shadow: none !important;
+}
+.switch input{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+}
+.sectionHead{
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.faq{
+    padding-bottom: 40px;
+}
+
+
+@media (max-width:1199px){
+    .dashboardHeadleft ul li a{
+        padding: 8px 11px;
+        font-size: 12px;
+    }
+    .dashboardHeadleftRight a{
+        height: 34px;
+    width: 34px;
+    font-size: 19px !important;
+    }
+    .dashboardHeadRightleft li a{
+        height: 34px;
+        width: 34px;
+    }
+    .downloadbtn{
+        margin: 0 10px;
+        font-size: 18px;
+    }
+    .switch{
+        font-size: 14px;
+    }
+    .dashboardHeader ul li {
+        padding: 0 15px;
+       
+    }
+    .dashboardHeader ul li a{
+        font-size: 14px;
+    }
+    .sectionHead{
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+  
+    }
+
+
+    @media (max-width:991px){
+        .dashboardHeadRightRight{
+            display: none;
+        }
+    }
+
+    @media (max-width:767px){
+        .dashboardHeadleft{
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .dashboardHeadleft ul + ul{
+            margin-left: 5px;
+ 
+        }
+        .dashboardHead{
+            align-items: baseline;
+        
+        }
+        .dashboardHeadleft ul li a{
+            padding: 8px 8px;
+            font-size: 12px;
+        }
+        .dashboardHead{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        
+        }
+    }
+
+
+    @media (max-width:575px){
+       
+        .dashboardHead{
+            flex-wrap: wrap;
+        
+        }
+        .dashboardHeadleft{
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .dashboardHeader{
+            display: none;
+        }
+        .dashboardHead{
+            padding-bottom: 0px;
+        
+        }
+    }
+
+    @media (max-width:374px){
+        .dashboardHeadleft ul li a{
+            padding: 8px 8px;
+            font-size: 11px;
+        }
+    
+    }
